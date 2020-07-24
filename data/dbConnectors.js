@@ -6,7 +6,8 @@ import casual from 'casual';
 //Mongo connections
 mongoose.Promise= global.Promise;
 mongoose.connect('mongodb://locahost/friends',{
-    useMongoClient: true
+    useNewUrlParser: true,
+    useUnifiedTopology: true
 
 });
 
